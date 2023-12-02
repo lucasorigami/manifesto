@@ -1,7 +1,66 @@
-.tnc {
-    margin: 0 30% 0 30%;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+html {
+    height: 100%;
+}
+
+
+
+
+body {
+    background-image: url("bg.jpg");
+    background-size: cover;
+}
+ 
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+
+#tnc {
+    overflow-y: scroll;
+
+
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(black), to(transparent));
+    -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+    mask-image: -webkit-gradient(linear, left top, left bottom, from(black), to(transparent));
+    mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 10% 30% 0 30%;
     max-width: 80%;
     position: absolute;
     background-color: lightgrey;
     color: grey;
+    padding: 10px;
+    border-radius: 10px;
+    height: 60%;
+
+
+}
+
+#button {
+    background-color: rgb(173, 173, 173);
+    border-radius: 40px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.9);
 }
