@@ -17,15 +17,6 @@ fetch('https://api.npoint.io/7c7e18cde89d8def88f1')
 
 
 
-// window.onscroll = function (ev) {
-    // if (window.innerHeight + window.scrollY >= (document.body.offsetHeight-1000)) {
-        // renderTemplate();
-    // }
-// }
-
-// document.addEventListener('scroll', function (scrolled) {
-
-// }
 
 
 scrollableDiv.onscroll = function (ev) {
@@ -138,28 +129,73 @@ scrollableDiv.onscroll = function (ev) {
             buttonDiv.style.color = "black"
             buttonDiv.style.textDecoration = "none" 
         }
+        if (scrolledDistance > 55000) {
+            buttontext = "leading you to discover new and interesting websites"
+            buttonDiv.style.backgroundColor = "white"
+            buttonDiv.style.color = "red"
+            buttonDiv.style.textDecoration = "none" 
+        }
+        if (scrolledDistance > 60000) {
+            buttontext = "to bring you to new places"
+            buttonDiv.style.backgroundColor = "lightblue"
+            buttonDiv.style.color = "black"
+            buttonDiv.style.textDecoration = "none" 
+        }
+        if (scrolledDistance > 65000) {
+            buttontext = "instead of just keeping you scrolling..."
+            buttonDiv.style.backgroundColor = "lightgrey"
+            buttonDiv.style.color = "grey"
+            buttonDiv.style.textDecoration = "none" 
+        }
+        if (scrolledDistance > 65000) {
+            buttontext = "so do you want to go somewhere interesting?"
+            buttonDiv.style.backgroundColor = "lightgrey"
+            buttonDiv.style.color = "grey"
+            buttonDiv.style.textDecoration = "none" 
+        }
+        if (scrolledDistance > 65000) {
+            buttontext = "all you have to do is"
+            buttonDiv.style.backgroundColor = "lightgrey"
+            buttonDiv.style.color = "grey"
+            buttonDiv.style.textDecoration = "none" 
+        }
+        if (scrolledDistance > 70000) {
+            buttontext = "forget about the text above"
+            buttonDiv.style.backgroundColor = "lightgrey"
+            buttonDiv.style.color = "grey"
+            buttonDiv.style.textDecoration = "none" 
+        }
+        if (scrolledDistance > 75000) {
+            buttontext = "forget about the text above"
+            buttonDiv.style.backgroundColor = "lightgrey"
+            buttonDiv.style.color = "grey"
+            buttonDiv.style.textDecoration = "none" 
+        }
+        if (scrolledDistance > 80000) {
+            buttontext = "I promise, you're not the product..."
+            buttonDiv.style.backgroundColor = "lightgrey"
+            buttonDiv.style.color = "grey"
+            buttonDiv.style.textDecoration = "none" 
+        }
+        if (scrolledDistance > 85000) {
+            buttontext = "just click on that button..."
+            buttonDiv.style.backgroundColor = "lightgrey"
+            buttonDiv.style.color = "grey"
+            buttonDiv.style.textDecoration = "none" 
+        }
+        if (scrolledDistance > 90000) {
+            buttontext = "accept & continue"
+            buttonDiv.style.backgroundColor = "rgb(173, 173, 173)"
+            buttonDiv.style.color = "grey"
+            buttonDiv.style.textDecoration = "none" 
+        }
             button.innerHTML = `<p>${buttontext}</p>`
 };
 
 
-// length array 
-// += 1
-
-// [item + 2]
-
-// currentItem = 0 
-
-// item[currentItem + 1].length 
-
-// item[currentItem + 1]
 
 function renderTemplate() {
     item = collection[i]
-    // for (let item of collection) {
-    //     html = `<p>${item}</p>`;
-    //     console.log(item)
-    // }
-    // wrapper.innerHTML = html
     html = `<p>${item}</p>`;
     console.log(i);
 
