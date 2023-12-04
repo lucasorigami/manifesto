@@ -126,6 +126,18 @@ scrollableDiv.onscroll = function (ev) {
             buttonDiv.style.color = "black"
             buttonDiv.style.textDecoration = "none" 
         }
+        if (scrolledDistance > 48000) {
+            buttontext = "like:"
+            buttonDiv.style.backgroundColor = "lightblue"
+            buttonDiv.style.color = "black"
+            buttonDiv.style.textDecoration = "none" 
+        }
+        if (scrolledDistance > 50000) {
+            buttontext = "Hey check this out!"
+            buttonDiv.style.backgroundColor = "lightblue"
+            buttonDiv.style.color = "black"
+            buttonDiv.style.textDecoration = "none" 
+        }
             button.innerHTML = `<p>${buttontext}</p>`
 };
 
